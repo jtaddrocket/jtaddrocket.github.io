@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap"
       rel="stylesheet"
     />
-    <title>Danh sách đăng ký môn học</title>
+    <title>Danh sách đăng ký thi</title>
     <style>
       body {
         background-size: cover;
@@ -37,13 +37,13 @@
     <!-- Nav Starts -->
     <nav class="navbar navbar-light mb-5 p-3" style="background-color: #fffafa;">
       <div class="container">
-        <a class="navbar-brand">DANH SÁCH ĐĂNG KÝ MÔN HỌC</a>
+        <a class="navbar-brand">DANH SÁCH ĐĂNG KÝ THI</a>
         <div class="d-flex">
           <a class="btn btn-outline-info" href="/admin/">Admin</a>
           &nbsp;
           <a class="btn btn-outline-primary" href="{% url 'start' %}">Trang chủ</a>
           &nbsp;
-          <a class="btn btn-outline-success" href="{% url 'generate' %}">Thời khoá biểu</a>
+          <a class="btn btn-outline-success" href="{% url 'generate' %}">Lịch thi</a>
           &nbsp;
           <a class="btn btn-outline-dark" href="{% url 'signout' %}">Đăng xuất</a>
         </div>
@@ -58,7 +58,7 @@
             <th align="center" style="text-align: center;">Sinh viên</th>
             <th align="center" style="text-align: center;">Email</th>
             <th align="center" style="text-align: center;">Số môn</th>
-            <th align="center" style="text-align: center;">Danh sách môn học</th>
+            <th align="center" style="text-align: center;">Danh sách môn thi</th>
           </tr>
         </thead>
         <tbody>
@@ -81,7 +81,7 @@
             {% endfor %}
           {% else %}
             <tr>
-              <td colspan="4" align="center">Chưa có sinh viên nào đăng ký môn học</td>
+              <td colspan="4" align="center">Chưa có sinh viên nào đăng ký thi</td>
             </tr>
           {% endif %}
         </tbody>

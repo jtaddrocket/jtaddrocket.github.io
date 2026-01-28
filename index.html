@@ -238,14 +238,14 @@
     <!-- Nav Starts -->
     <nav class="navbar navbar-light mb-5 p-3" style="background-color: #fffafa;">
       <div class="container">
-        <a class="navbar-brand">ĐĂNG KÝ MÔN HỌC</a>
+        <a class="navbar-brand">ĐĂNG KÝ THI</a>
         <div class="d-flex">
           {% if is_admin %}
           <a class="btn btn-outline-info" href="/admin/">Admin</a>
           &nbsp;
           <a class="btn btn-outline-primary" href="{% url 'view_registrations' %}">Xem đăng ký</a>
           &nbsp;
-          <a class="btn btn-outline-success" href="{% url 'generate' %}">Thời khoá biểu</a>
+          <a class="btn btn-outline-success" href="{% url 'generate' %}">Lịch thi</a>
           {% endif %}
            &nbsp;
           <a class="btn btn-outline-dark" href="{% url 'signout' %}">Đăng xuất</a>
@@ -266,7 +266,7 @@
           </div>
 
           <br><br><br><br><br>
-          <h2>THÔNG TIN NGƯỜI DÙNG</h2>
+          <h2>THÔNG TIN THÍ SINH</h2>
           <div class="card">
             <header>    
               <img src='https://th.bing.com/th/id/Rc11b6f38dffc24a4508217513b0e50bd?rik=Pt%2bkITlukiMkWg&riu=http%3a%2f%2fwww.emmegi.co.uk%2fwp-content%2fuploads%2f2019%2f01%2fUser-Icon.jpg&ehk=zjS04fF4nxx%2bpkvRPsSezyic3Z7Yfu%2fuoT75KnbNv1Y%3d&risl=&pid=ImgRaw' alt='user'>
