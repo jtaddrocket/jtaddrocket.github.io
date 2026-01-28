@@ -1,0 +1,213 @@
+/* CSS từ start.html - Tách ra từ thẻ <style> */
+
+body {
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.01),
+      rgba(255, 255, 255, 0.01)
+    ),
+    url("https://images.unsplash.com/photo-1557682250-33bd709cbe85?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
+  color: white;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,400i,700");
+
+html,
+body {
+  height: 100vh;
+  font-size: 14px;
+  font-family: Montserrat, sans-serif;
+}
+
+.card {
+  width: 300px;
+  max-width: 100%;
+  text-align: center;
+  border-radius: 12px;
+  background: white;
+  border: 1px solid #d4d4d4;
+}
+
+.card header {
+  background-image: url('https://images.unsplash.com/photo-1616268177838-f524156bb98d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNjYyMTQ1NQ&ixlib=rb-1.2.1&q=80&w=400');
+  height: 120px;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 100px;
+}
+
+.card header img {
+  margin: 70px 40px 10px 40px;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  border: 6px solid white;
+}
+
+.card header p {
+  color: #444;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.card_body {
+  margin-top: 60px;
+}
+
+.card_body ul.social {
+  display: flex;
+  list-style: none;
+  margin-bottom: 40px;
+  justify-content: space-around;
+}
+
+.card_body ul.social li {
+  cursor: pointer;
+}
+
+.card_body li h3 {
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+}
+
+.card_body li p {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+
+body {
+  background-color: #3e94ec;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+div.table-title {
+  display: block;
+  margin: auto;
+  max-width: 600px;
+  padding: 5px;
+  width: 100%;
+}
+
+.table-title h3 {
+  color: #fafafa;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+
+/*** Table Styles **/
+
+.table-fill {
+  background: white;
+  border-radius: 3px;
+  border-collapse: collapse;
+  height: auto;
+  margin: auto;
+  max-width: 600px;
+  padding: 5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+
+th {
+  color: #D5DDE5;
+  background: #1b1e24;
+  border-bottom: 4px solid #9ea7af;
+  border-right: 1px solid #343a45;
+  font-size: 23px;
+  font-weight: 100;
+  padding: 24px;
+  text-align: left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align: middle;
+}
+
+th:first-child {
+  border-top-left-radius: 3px;
+}
+
+th:last-child {
+  border-top-right-radius: 3px;
+  border-right: none;
+}
+
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom: 1px solid #C1C3D1;
+  color: #666B85;
+  font-size: 16px;
+  font-weight: normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+
+tr:hover td {
+  background: #4E5066;
+  color: #FFFFFF;
+  border-top: 1px solid #22262e;
+}
+
+tr:first-child {
+  border-top: none;
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+tr:nth-child(odd) td {
+  background: #EBEBEB;
+}
+
+tr:nth-child(odd):hover td {
+  background: #4E5066;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius: 3px;
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: 3px;
+}
+
+td {
+  background: #FFFFFF;
+  padding: 20px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 18px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {
+  border-right: 0px;
+}
+
+th.text-left,
+td.text-left {
+  text-align: left;
+}
+
+th.text-center,
+td.text-center {
+  text-align: center;
+}
+
+th.text-right,
+td.text-right {
+  text-align: right;
+}
